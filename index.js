@@ -1,6 +1,6 @@
 
 let id = 0;
-/* Add references tio checkbox and button
+/* Add references to checkbox and button
 Create block from form submission without checking box
 Add event listener to update button's disabled state when checkbox is checked */
 
@@ -22,7 +22,7 @@ document.getElementById('myButton').addEventListener('click', () => {
 
     /*Get table, insert new row*/
     let table = document.getElementById('list');
-    /*Add row IDw*/
+    /*Add row ID*/
     let row = table.insertRow(1);
     row.setAttribute('id', `item-${id}`);
     /*Bring information in from HTML flile to fill cells*/
@@ -42,7 +42,6 @@ function createDeleteButton(id) {
     btn.innerHTML = 'Delete';
     /*Row is deleted with click event*/
     btn.onclick = () => {
-        console.log(`Deleting row with id: item-${id}`);
         let elementToDelete = document.getElementById(`item-${id}`);
         elementToDelete.parentNode.removeChild(elementToDelete);
     };
