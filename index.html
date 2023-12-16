@@ -1,0 +1,88 @@
+
+<!--Using HTML, Bootstrap, and JavaScript
+create a single page website that contains the following:
+- A Bootstrap styled table representing your choice of data.
+- A bootstrap styled form that allows a user to add a new
+row to the table when clicking on sumbit. -->
+
+  <!-- Declare HTML Document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Page Title -->
+    <title>Week 10</title>
+      <!-- Adding Bootstrap -->
+    <link rel="stylesheet" href= "node_modules/bootstrap/dist/css/bootstrap.css"
+</head>
+<body class="container">
+   <!-- Background Image Styling -->
+    <style>
+        body {
+          background-image: url('https://ih1.redbubble.net/image.1212475800.8366/flat,750x,075,f-pad,750x1000,f8f8f8.jpg');
+        }
+        </style>     
+    <br>
+      <!-- Card Section -->
+    <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+              <!-- Card Title & Description -->
+            <h5 class="card-title">Check Out A Record!</h5>
+            <p class="card-text">Use the form below to check out a record.</p>
+              <!-- Form Selection -->
+              <div class="row">
+                <div class="col-sm">
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-sm"></div>
+             <!-- Form Group "Your Name:" -->
+            <div class="form-group">
+                <label for="new-task">Your Name:</label>
+                <input type="text" class=" form-control" id="new-name" placeholder="Enter Your Name">       
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm"></div>
+             <!-- Form Group "Artist:" -->
+            <div class="form-group">
+                <label for="new-artist">Artist:</label>
+                <input type="text" class=" form-control" id="new-artist" placeholder="Enter Artist Name">       
+            </div>
+        </div>
+        <div class="row"></div>
+            <div class="col-sm"></div>
+             <!-- Form Group "Album Title:" -->
+            <div class="form-group">
+                <label for="new-task">Album Title:</label>
+                <input type="text" class=" form-control" id="new-album" placeholder="Enter Album Title">       
+            </div>
+        </div>
+         <!-- Checkbox and Button Section -->
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="myCheckbox">
+            <label class="custom-control-label" for="customCheck1">By checking this box you agree to return your record by the due date listed below</label>
+            <button id="myButton" class="btn btn-danger btn-lg btn-block form-control">Add</button>
+    </div>
+  </div>
+</div>
+ <!-- Table Section -->
+<table id="list" class="table table-bordered table-dark">
+    <tr>
+        <th>Your Name</th>
+        <th>Artist</th>
+        <th>Album Title</th>
+        <th>Check-Out Date</th>
+        <th>Due Date</th>
+        <th>Actions</th>
+    </tr>
+</table>
+</div>
+ <!-- Adding JavaScript and Bootstrap -->
+<script src = index.js></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
